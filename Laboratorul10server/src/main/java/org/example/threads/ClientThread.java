@@ -9,6 +9,11 @@ import java.net.Socket;
 public class ClientThread extends Thread {
     private Socket socket = null ;
     public ClientThread (Socket socket) { this.socket = socket ; }
+
+    /**
+     * se comunica cu clientul prin tcp intr-un while. Se opreste executia threadului atunci cand este primit exit
+     * se opreste tot serverul cand este primit stop
+     */
     public void run () {
         try {
             // Get the request from the input stream: client → server
@@ -47,7 +52,6 @@ public class ClientThread extends Thread {
         }
         finally {
             try {
-
                 socket.close(); // or use try-with-resources
             } catch (IOException e) { System.err.println (e); }
         }

@@ -8,6 +8,11 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class GameClient {
+    /**
+     * comunicam cu serverul intr-un while pana cand fie clientul este inchis, fie se inchide serverul
+     * @param name
+     * @throws IOException
+     */
     public GameClient(String name) throws IOException {
         String serverAddress = "127.0.0.1"; // The server's IP address
         int PORT = 8100; // The server's port
@@ -22,7 +27,6 @@ public class GameClient {
             while (true) {
                 if (socket.isClosed())
                     break;
-                // Send a request to the server
 
                 request=reader.readLine();
                 if (request==null){
@@ -40,18 +44,17 @@ public class GameClient {
                     System.exit(0);
                 }
 
-                // Wait the response from the server ("Hello World!")
                 String response;
                 if ((response= in.readLine ())==null)
                     break;
 
                 System.out.println("["+name+"]: "+response);
-//                if (request.compareTo("stop")==0){
-//                    in.close();
-//                    out.close();
-//                    socket.close();
-//                    System.exit(0);
-//                }
+                if (request.compareTo("stop")==0){
+                    in.close();
+                    out.close();
+                    socket.close();
+                    System.exit(0);
+                }
             }
 
         } catch (UnknownHostException e) {

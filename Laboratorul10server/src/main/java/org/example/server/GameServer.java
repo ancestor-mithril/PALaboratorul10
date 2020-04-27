@@ -10,6 +10,11 @@ import java.net.Socket;
 public class GameServer {
     // Define the port on which the server is listening
     public static final int PORT = 8100;
+
+    /**
+     * se deschide cate un nou thread pt fiecare server
+     * @throws IOException
+     */
     public GameServer() throws IOException {
         ServerSocket serverSocket = null ;
         try {
