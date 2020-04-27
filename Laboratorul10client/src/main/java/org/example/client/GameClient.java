@@ -20,7 +20,6 @@ public class GameClient {
             String request = null;
             BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
             while (true) {
-                System.out.println(socket.isClosed());
                 if (socket.isClosed())
                     break;
                 // Send a request to the server

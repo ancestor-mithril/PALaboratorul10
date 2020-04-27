@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17199037-e624-486f-9769-e096d3d2e439" name="Default Changelist" comment="" />
+    <list default="true" id="17199037-e624-486f-9769-e096d3d2e439" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Laboratorul10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorul10client/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10client/src/main/java/org/example/client/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10client/src/main/java/org/example/client/GameClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10client/target/classes/org/example/client/GameClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10client/target/classes/org/example/client/GameClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threads/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threads/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/threads/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/threads/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +25,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +36,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1b71RLjSfgtu7i0YZ5hTdUXk5sl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -63,7 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587968308805</updated>
       <workItem from="1587968310207" duration="3878000" />
-      <workItem from="1587972546501" duration="525000" />
+      <workItem from="1587972546501" duration="754000" />
+      <workItem from="1587974639788" duration="220000" />
     </task>
     <servers />
   </component>
@@ -71,21 +87,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587972991737">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587974859072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587972991737" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587972991737">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587974859072" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587974859072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587972991737" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587972991737">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587974859072" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587974859072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587972991737" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587972991737">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587974859072" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587974859072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587972991737" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587974859072" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1587974762950">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1587974762950" />
   </component>
 </project>

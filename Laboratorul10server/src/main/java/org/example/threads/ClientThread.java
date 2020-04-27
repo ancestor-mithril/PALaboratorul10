@@ -22,14 +22,13 @@ public class ClientThread extends Thread {
                 String raspuns=null;
                 if (request.compareTo("exit")==0){
                     raspuns = "Client stopped ";
-                    socket.close();
-                    System.exit(0);
+                    System.out.println("[SERVER]:"+raspuns);
+                    break;
                 }
                 if (request.compareTo("stop")==0){
                     raspuns = "Server stopped ";
                     out.println(raspuns);
                     out.flush();
-                    out.println(CLIENT_CLOSE);
                     in.close();
                     out.close();
                     socket.close();
