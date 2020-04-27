@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63ce27e3-c590-4362-a3b7-7c730f861ba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Laboratorul10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/GameClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/client/GameClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/client/GameClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Laboratorul10server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/server/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/server/GameServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/threads/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/threads/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/server/GameServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/server/GameServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/threads/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/threads/ClientThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +42,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.GameClient">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="Laboratorul10" />
+      <module name="Laboratorul10client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -78,8 +71,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GameClient" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.GameClient" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +88,7 @@
       <updated>1587968235824</updated>
       <workItem from="1587968237448" duration="4004000" />
       <workItem from="1587972545393" duration="752000" />
-      <workItem from="1587974628283" duration="247000" />
+      <workItem from="1587974628283" duration="2016000" />
     </task>
     <servers />
   </component>
@@ -103,26 +96,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="485" y="109" key="#App" timestamp="1587976247407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="109" key="#App/0.0.1536.824@0.0.1536.824" timestamp="1587976247407" />
     <state x="485" y="109" key="#GameClient" timestamp="1587972571322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="109" key="#GameClient/0.0.1536.824@0.0.1536.824" timestamp="1587972571322" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587974923957">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587976582716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587974923957" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587974923957">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587976582716" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587976582716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587974923957" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587974923957">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587976582716" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587976582716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587974923957" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587974923957">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587976582716" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587976582716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587974923957" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587976582716" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587974628742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

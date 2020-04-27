@@ -42,7 +42,10 @@ public class ClientThread extends Thread {
             }
         } catch (IOException e) {
             System.err.println("Communication error... " + e);
-        } finally {
+        }catch (Exception e) {
+            System.err.println("Client inchis " + e);
+        }
+        finally {
             try {
 
                 socket.close(); // or use try-with-resources
