@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17199037-e624-486f-9769-e096d3d2e439" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10client/src/main/java/org/example/client/GameClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10client/src/main/java/org/example/client/GameClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laboratorul10client/target/classes/org/example/client/GameClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10client/target/classes/org/example/client/GameClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/threads/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/threads/ClientThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +72,7 @@
       <workItem from="1587972546501" duration="754000" />
       <workItem from="1587974639788" duration="220000" />
       <workItem from="1587974867879" duration="4116000" />
-      <workItem from="1587990970554" duration="248000" />
+      <workItem from="1587990970554" duration="911000" />
     </task>
     <servers />
   </component>
@@ -84,22 +80,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587991197202">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587995672879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587991197202" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587991197202">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587995672879" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587995672879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587991197202" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587991197201">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587995672879" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587995672879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587991197201" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587991197202">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587995672879" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587995672879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587991197202" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587995672879" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1587974762950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -13,8 +13,8 @@ Setare:
     3. Create the class ClientThread. An instance of this class will be responsible with communicating with a client Socket. If the server receives the command stop it will stop and will return to the client the respons "Server stopped", otherwise it return: "Server received the request ... ".
         * copiata din curs, cu urmatoarele diferente:
         * operatiile de I/O (comunicarea cu clientii) sunt realizate intr-un while(true)
-        * daca requestul primit este *exit* (clientul s-a inchis pe sine), se afiseaza acest lucru si se iese din while
-        * daca requestul este *stop*, se trimite inapoi clientului mesajul cerut in cerinta, se inchide in, out, socket, si se da System.exit(0) *(If the server receives the command stop it will stop )*
+        * daca requestul primit este *exit* (clientul s-a inchis pe sine), se afiseaza acest lucru si se iese din while(nu are rost sa asteptam un client care nu va mai veni)
+        * daca requestul este *stop*, se trimite inapoi clientului mesajul cerut in cerinta, ~~se inchide in, out, socket, si se da System.exit(0) *(If the server receives the command stop it will stop )*~~ si este inchis threadul
         * in rest este la fel ca in curs
     4. Create the project ClientApplication. This will contain (at least) the class: GameClient.
         * a fost creata in pachetul org.example.client
@@ -25,4 +25,4 @@ Setare:
         * citim de la tastatura intr-un buffered reader
         * daca nu am citit nimic inchidem tot (nu este necesar)
         * daca stdin este exit, inchidem tot si ne oprim
-        * daca stdin este stop (si serverul se opreste), nu mai are rost ca sa comunice clientul in gol, deci il oprim si pe el
+        * daca stdin este stop (si ~~serverul~~ threadul se opreste), nu mai are rost ca sa comunice clientul in gol, deci il oprim si pe el

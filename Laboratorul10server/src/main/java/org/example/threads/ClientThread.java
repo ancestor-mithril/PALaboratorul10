@@ -29,16 +29,19 @@ public class ClientThread extends Thread {
                 if (request.compareTo("exit")==0){
                     raspuns = "Client stopped ";
                     System.out.println("[SERVER]:"+raspuns);
-                    break;
+                    return;
                 }
                 if (request.compareTo("stop")==0){
                     raspuns = "Server stopped ";
                     out.println(raspuns);
                     out.flush();
-                    in.close();
+                    //varianta de oprire a serverului
+                    /*in.close();
                     out.close();
                     socket.close();
-                    System.exit(0);
+                    System.exit(0);*/
+                    //varianta de oprire a threadului
+                    return;
                 }
                 else {
                     raspuns = "Server received the request  " + request + " ... ";
