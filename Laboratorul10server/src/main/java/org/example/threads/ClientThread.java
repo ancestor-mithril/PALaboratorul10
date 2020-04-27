@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.net.SocketException;
 
 public class ClientThread extends Thread {
     private Socket socket = null ;
@@ -47,8 +48,6 @@ public class ClientThread extends Thread {
             }
         } catch (IOException e) {
             System.err.println("Communication error... " + e);
-        }catch (Exception e) {
-            System.err.println("Client inchis " + e);
         }
         finally {
             try {

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.net.SocketException;
 import java.net.UnknownHostException;
 
 public class GameClient {
@@ -60,7 +61,7 @@ public class GameClient {
         } catch (UnknownHostException e) {
             System.err.println("No server listening... " + e);
         }
-        catch (Exception e){
+        catch (IOException e){
             System.err.println("Server inchis");
         }
     }
