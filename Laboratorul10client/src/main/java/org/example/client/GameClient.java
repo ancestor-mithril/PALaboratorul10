@@ -7,10 +7,12 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
+import java.util.stream.Collectors;
 
 public class GameClient {
     /**
      * comunicam cu serverul intr-un while pana cand fie clientul este inchis, fie se inchide serverul
+     * nu are nici o treaba cu logica jocului
      * @param name
      * @throws IOException
      */
@@ -45,10 +47,9 @@ public class GameClient {
                     System.exit(0);
                 }
 
-                String response;
-                if ((response= in.readLine ())==null)
-                    break;
-
+                String response1;
+                response1=in.readLine();
+                String response=response1.replace('\t', '\n');
                 System.out.println("["+name+"]: "+response);
                 if (request.compareTo("stop")==0){
                     in.close();
