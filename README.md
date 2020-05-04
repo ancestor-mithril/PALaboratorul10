@@ -52,6 +52,7 @@ Setare:
         * serverul nu are rolul sa anunte ca un jucator si-a terminat tura, ci doar raspunde la requesturi
         * daca un player nu si-a terminat tura, serverul doar va refuza executarea turei celuluilalt player pana cand ii vine si lui randul
     4. Once a game is finished, an HTML or SGF representation of the game should be uploaded to a Web server.
+        * nu a fost realizat
 
 3. Bonus
     1. S-a realizat implementarea unui AI. Exista un AI pentru primul jucator(alb), pur determinist care castiga in 35 de mutari
