@@ -15,6 +15,7 @@ import java.net.SocketException;
 public class ClientThread extends Thread {
     private Socket socket = null ;
     private String player=null;
+    private int game=0;
     GameServer gameServer;
     public ClientThread (Socket socket, GameServer gameServer) { this.socket = socket ; this.gameServer=gameServer; }
 
@@ -56,35 +57,63 @@ public class ClientThread extends Thread {
                     //varianta de oprire a threadului
                     return;
                 }
+                else if (request.compareTo("help")==0){
+                    raspuns = "You may \'create game\' \t\'create game ai\' \t\'join game\' \t\'submit move n m\'\t\'show board\'\t\'exit\'\t\'stop\'\t";
+                }
                 else if (processGame().equals("Game may continue ")){
                     if (request.compareTo("create game")==0){
                         if (this.player!=null)
                             raspuns="You are already in a game";
                         else if (this.gameServer.getGame()==null){
+                            this.game=1;
                             raspuns = "The game was created, join game to play it";
                             this.gameServer.setGame(new Game("This game"));
                         }
                         else
-                            raspuns = "Game was already created. Please join if there are less than 2 players";
+                            raspuns = "Game was already created. Please join it";
+                    }
+                    else if (request.compareTo("create game ai")==0){
+                            if (this.player!=null)
+                                raspuns="You are already in a game";
+                            else if (this.gameServer.getGame()==null){
+                                this.game=2;
+                                raspuns = "The game was created, join game to play it";
+                                this.gameServer.setGame(new Game("This game"));
+                            }
+                            else
+                                raspuns = "Game was already created. Please join it";
                     }
                     else if (request.compareTo("join game")==0){
                         if (this.player!=null)
                             raspuns = "you have already joined a game. Please \"submit move n m\", where n, m<10, or  \"show board\"";
                         else if (this.gameServer.getGame()==null)
                             raspuns = "The game was not created. Please create a game first. ";
-                        else if (this.gameServer.getGame().getPlayers().size()==1){
-                            this.player="black";
-                            this.gameServer.getGame().joinGame(new Player("black"));
-                            raspuns = "You have joined the game as black. \t Your possible moves are \"submit move n m\", where n," +
-                                    "m<12 \t \"show board\", it will shoe the board";
+                        else {
+                            if (this.game==1){
+                                if (this.gameServer.getGame().getPlayers().size()==1){
+                                    this.player="black";
+                                    this.gameServer.getGame().joinGame(new Player("black"));
+                                    raspuns = "You have joined the game as black. \t Your possible moves are \"submit move n m\", where n," +
+                                            "m<12 \t \"show board\", it will shoe the board";
+                                }
+                                else if (this.gameServer.getGame().getPlayers().size()==0){
+                                    this.player="white";
+                                    this.gameServer.getGame().joinGame(new Player("white"));
+                                    raspuns = "You have joined the game as white. \t Your possible moves are \"submit move n m\", where n," +
+                                            "m<10 \t \"show board\", it will shoe the board";
+                                } else
+                                    raspuns = "This game is only for 2 players, you have no place here.";
+                            }
+                            else {
+                                if (this.gameServer.getGame().getPlayers().size()==0){
+                                    this.player="white";
+                                    this.gameServer.getGame().joinGame(new Player("white"));
+                                    raspuns = "You have joined the game as white and you play against AI. \t Your possible moves are \"submit move n m\", where n," +
+                                            "m<10 \t \"show board\", it will shoe the board";
+                                } else
+                                    raspuns = "This game is only for 1 player and an AI, you have no place here.";
+                            }
                         }
-                        else if (this.gameServer.getGame().getPlayers().size()==0){
-                            this.player="white";
-                            this.gameServer.getGame().joinGame(new Player("white"));
-                            raspuns = "You have joined the game as white. \t Your possible moves are \"submit move n m\", where n," +
-                                    "m<10 \t \"show board\", it will shoe the board";
-                        } else
-                            raspuns = "This game is only for 2 players, you have no place here.";
 
                     }
                     else if (request.matches("submit move . .")){
@@ -94,13 +123,13 @@ public class ClientThread extends Thread {
                         raspuns = this.gameServer.getGame().getBoard().toString();
                     }
                     else {
-                        raspuns = "Server received the request  " + request + " ... " + " This is an invalid request";
+                        raspuns = "Server received the request  " + request + " ... " + " This is an invalid request. \t Write \'help\'";
                     }
                 } else {
                     if (request.compareTo("show board")==0){
                         raspuns = this.gameServer.getGame().getBoard().toString();
                     } else
-                        raspuns = processGame()+"\t You may only look at the board with \'show board\' or exit or stop";
+                        raspuns = processGame()+"\t You may only look at the board with \'show board\' or help or exit or stop";
                 }
                 System.out.println("[SERVER]: raspuns: "+raspuns);
                 out.println(raspuns);
@@ -140,6 +169,8 @@ public class ClientThread extends Thread {
                 this.gameServer.getGame().getBoard().setPositionWhite(n, m);
             else
                 this.gameServer.getGame().getBoard().setPositionBlack(n, m);
+            if (this.game==2)
+                this.gameServer.getGame().ai(n, m);
             return "Move was successful\t " + processGame();
         }else
             return "The position [n, m] is not empty. Please submit another move ";
@@ -150,7 +181,7 @@ public class ClientThread extends Thread {
      * metoda care verifica starea jocului
      * @return starea jocului
      */
-    private String processGame(){
+    private String processGame() {
         if (this.gameServer.getGame()==null)
             return "Game may continue ";
         return this.gameServer.getGame().getBoard().getGameState();

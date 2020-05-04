@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="63ce27e3-c590-4362-a3b7-7c730f861ba4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/client/GameClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/client/GameClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Laboratorul10server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/game/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/threads/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/src/main/java/org/example/threads/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/game/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/game/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/threads/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorul10server/target/classes/org/example/threads/ClientThread.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +99,8 @@
       <workItem from="1588488477074" duration="4874000" />
       <workItem from="1588572535207" duration="253000" />
       <workItem from="1588572958591" duration="220000" />
+      <workItem from="1588584635308" duration="59000" />
+      <workItem from="1588588473040" duration="1325000" />
     </task>
     <servers />
   </component>
@@ -107,26 +116,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="109" key="#GameClient/0.0.1536.824@0.0.1536.824" timestamp="1587972571322" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588498753068">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588589798588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588498753068" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588498753068">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588589798588" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588589798588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588498753068" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588498753068">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588589798588" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588589798588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588498753068" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588498753068">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588589798588" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588589798588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588498753068" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588572958567">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588589798588" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588584635284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588572958567" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588584635284" />
     <state x="209" y="114" key="new project wizard" timestamp="1588572971818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

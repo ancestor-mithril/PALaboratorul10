@@ -27,7 +27,6 @@ Setare:
         * daca stdin este exit, inchidem tot si ne oprim
         * daca stdin este stop (si ~~serverul~~ threadul se opreste), nu mai are rost ca sa comunice clientul in gol, deci il oprim si pe el
         
-        
 2. Optional
     * **Se pot deschide 2 clienti astfel: rulare cu Shift + F10 (sageata de run), si in josul paginii, se deschide si terminalul, se deplaseaza pana in /target/classes si se ruleaza "java org.example.App"**
     1. Implement functionalities of the game, using the classes Game, Board, Player, etc.
@@ -53,3 +52,17 @@ Setare:
         * serverul nu are rolul sa anunte ca un jucator si-a terminat tura, ci doar raspunde la requesturi
         * daca un player nu si-a terminat tura, serverul doar va refuza executarea turei celuluilalt player pana cand ii vine si lui randul
     4. Once a game is finished, an HTML or SGF representation of the game should be uploaded to a Web server.
+
+3. Bonus
+    1. S-a realizat implementarea unui AI. Exista un AI pentru primul jucator(alb), pur determinist care castiga in 35 de mutari
+    2. Am implementat un ai pentru negru, pur blocant. Acesta cauta in functie de ultima piesa pusa de jucatorul in alb pe tabla de joc si incearca sa blocheze realizarea unui sir
+    3. In cazul in care nu gaseste o locatie, aseaza piesa neagra random pe tabla de joc
+    
+4. Desfasurare joc:
+    1. Se deshide serverul
+    2. Din intellij sau consola se deschide aplicatia client (1 pentru ai, 2 pt 2 v 2)
+    3. se apasa ***create game*** sau ***create game ai***
+    4. se apasa ***join game***
+    5. pentru a vedea tabla de joc se apasa ***show board***
+    6. iar ***submit move 2 4*** pentru a pune o piesa pe pozitia 2 4
+    

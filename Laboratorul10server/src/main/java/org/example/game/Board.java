@@ -75,6 +75,8 @@ public class Board {
      * @param m
      */
     public void setPositionWhite(int n, int m){
+        if (gameIsOver())
+            return;
         List<List<Integer>> aux = new ArrayList<>();
         for (int i=0; i<n; i++)
             aux.add(matrix.get(i));
@@ -99,6 +101,8 @@ public class Board {
      * @param m
      */
     public void setPositionBlack(int n, int m){
+        if (gameIsOver())
+            return;
         List<List<Integer>> aux = new ArrayList<>();
         for (int i=0; i<n; i++)
             aux.add(matrix.get(i));
@@ -231,7 +235,7 @@ public class Board {
      */
     @Override
     public String toString() {
-        String string= "";
+        String string= "\t";
         for (int i=0; i<length; i++)
             string+=matrix.get(i)+"\t";
         return string;
