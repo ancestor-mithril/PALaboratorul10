@@ -27,8 +27,7 @@ public class ClientThread extends Thread {
      * se tine cont de tura carui jucator este
      * este implementat un sistem de ture, fiecare jucator poate muta doar pe rand
      * in caz de mutare necorespunzatoare, se intoarce un raspuns
-     */
-    public void run () {
+*/    public void run () {
         try {
             // Get the request from the input stream: client → server
             BufferedReader in = new BufferedReader(

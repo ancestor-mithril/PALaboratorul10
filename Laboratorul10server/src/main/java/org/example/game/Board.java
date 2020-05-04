@@ -6,6 +6,7 @@ import java.util.List;
 public class Board {
     private int length;
     private List<List<Integer>> matrix = new ArrayList<>();
+    char matrice[][]=new char[10][10];
     private String round="white";
     private String gameState="Game may continue ";
 
